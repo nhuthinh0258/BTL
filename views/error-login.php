@@ -43,9 +43,16 @@ require("../template/header.php");
                                 </div>
                             </div>
                         </form>
+
+                    <div class="login_fast_wrap">
+                        <a class="login_link" href="/#">Forgot your password or cannot sign in?</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
+
+<?php
+require("../template/footer.php");
+?>

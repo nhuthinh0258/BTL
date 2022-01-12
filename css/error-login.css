@@ -1,6 +1,6 @@
 main > .container {
   width: 960px;
-  height: 960px;
+  height: 800px;
 }
 main > .container .wrap1 {
   margin-top: 50px;
@@ -57,6 +57,18 @@ main > .container .wrap1 .wrap2 .page_block .login_form .row {
 }
 main > .container .wrap1 .wrap2 .page_block .login_form .row button {
   margin: 0;
+}
+main > .container .wrap1 .wrap2 .page_block .login_fast_wrap {
+  margin: 38px auto;
+  width: 270px;
+}
+main > .container .wrap1 .wrap2 .page_block .login_fast_wrap a {
+  text-decoration: none;
+  color: #2a5885;
+  cursor: pointer;
+}
+main > .container .wrap1 .wrap2 .page_block .login_fast_wrap a:hover {
+  text-decoration: underline;
 }
 .btnsignup {
   padding: 7px 16px 8px 16px;
