@@ -1,0 +1,69 @@
+main > .container {
+  width: 960px;
+  height: 960px;
+}
+main > .container .wrap1 {
+  margin-top: 50px;
+}
+main > .container .wrap1 .wrap2 {
+  margin: 0 auto;
+  background-color: white;
+  width: 740px;
+}
+main > .container .wrap1 .wrap2 .page_block {
+  padding: 37px 30px;
+}
+main > .container .wrap1 .wrap2 .page_block h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+main > .container .wrap1 .wrap2 .page_block .login_mes {
+  background-color: #faebeb;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+main > .container .wrap1 .wrap2 .page_block .login_mes .mes_error {
+  padding: 9px 18px;
+  line-height: 150%;
+}
+main > .container .wrap1 .wrap2 .page_block .login_mes .mes_error .listing {
+  padding-left: 30px;
+  margin: 19px 0;
+}
+main > .container .wrap1 .wrap2 .page_block .login_mes .mes_error a {
+  text-decoration: none;
+  color: #2a5885;
+  cursor: pointer;
+}
+main > .container .wrap1 .wrap2 .page_block .login_mes .mes_error a:hover {
+  text-decoration: underline;
+}
+main > .container .wrap1 .wrap2 .page_block .login_form {
+  width: 270px;
+  margin: auto;
+}
+main > .container .wrap1 .wrap2 .page_block .login_form .checkbox {
+  cursor: pointer;
+  float: left;
+  margin: 0 7px 0 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+main > .container .wrap1 .wrap2 .page_block .login_form .row {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+main > .container .wrap1 .wrap2 .page_block .login_form .row button {
+  margin: 0;
+}
+.btnsignup {
+  padding: 7px 16px 8px 16px;
+  border-radius: 3px;
+  width: 155px;
+  border: 0;
+  background-color: #4bb34b;
+  font-size: 14px;
+  line-height: 20px;
+}
