@@ -1,0 +1,10 @@
+header {
+  background: white;
+  height: 48px;
+}
+.page-header {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 990px;
+  height: inherit;
+}

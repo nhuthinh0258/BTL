@@ -56,15 +56,15 @@
                         </div>
                         <div class="col px-0">
                             <div class="col p-4 bg-white" id=login>
-                                <form class="bg-white m-0 p-0">
+                                <form class="bg-white m-0 p-0" action="model/process-login.php" method="POST" name="login">
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="index_email" placeholder="Phone or email">
+                                        <input type="text" class="form-control" name="txtdienthoai" id="index_email" placeholder="Phone or email">
                                     </div>
                                     <div class="mb-3">
-                                        <input type="password" class="form-control" id="index_password" placeholder="Password">
+                                        <input type="password" class="form-control" name="txtpass" id="index_password" placeholder="Password">
                                     </div>
                                     
-                                    <button type="submit" class="btnsignin text-white" id="btnsignin">Sign in</button>
+                                    <button type="submit" class="btnsignin text-white" id="btnsignin" name="btnsignin">Sign in</button>
                                     <div class="forgot">
                                     <a id="index_forgot" class="index_forgot" href="/restore" target="_top">Forgot your password?</a>
                                     </div>
