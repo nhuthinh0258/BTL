@@ -34,7 +34,7 @@
                 <div class="content" style="padding: 18px 0 36px 0;">
                     <div class="main-about row py-0 mx-0">
                         <div class="col-sm-7 px-0 me-3" id="mobile" style="width: 622px; ">
-                            <div class="loginmobile px-0 text-center" style="width: 540px; padding: 14px 0 0 0; position:relative;">
+                            <div class="loginmobile px-0 text-center" style="width: 540px; padding: 14px 0 0 0;">
                                 <p class="loginmobile-head fw-bold mb-2" style="font-size:22px;">VK for mobile devices</p>
                                 <p class="loginmobile-info mb-0" style="font-size:14px;">Install our official mobile app and stay in touch with your friends anytime and anywhere.</p>
                                 <div class="loginmobile-promo" style="position:relative; width:540px; height: 474px; padding-top: 32px;">
