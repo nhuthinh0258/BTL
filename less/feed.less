@@ -43,7 +43,7 @@ header{
                 a{
                     padding: 17px 15px;
                     cursor: pointer;
-                    color: black;
+                    color: gray;
                 }
                 a:hover{
                     background-color: rgba(174, 183, 194, 0.12);
@@ -57,13 +57,13 @@ header{
                 display: flex;
                 align-items: center;
                 a{
-                    color: black;
+                    color: gray;
                     padding: 10px 20px;
                     cursor: pointer;
                     .camera{
                         position: relative;
                         border-radius: 50%;
-                        background-color: rgb(99, 110, 131);
+                        background-color: rgb(200, 203, 209);
                         width: 30px;
                         height: 30px;
                         #camera{
@@ -97,13 +97,14 @@ main{
     .page-layout{
         margin-top: 48px;
         .container{
-            padding-top: 15px;
             margin: auto;
-            padding-top:15px;
             padding: 0;
             width: 960px;
             background-color: #edeef0;
-            padding-top: 15px;
+            .nav-wrap{
+                padding-top: 15px;
+                width: 164px;
+                float: left;
                 .sidebar-wrap{
                     width: 165px;
                     float:left;
@@ -132,7 +133,7 @@ main{
                                     text-align: center;
                                     width: 20px;
                                     margin-right: 10px;
-                                    color: rgba(49, 49, 190, 0.986);
+                                    color: #5181b8;
                                 }
                             }
                             .left_row:hover{
@@ -160,19 +161,127 @@ main{
                     }
 
                 }
+            }
             .page-body{
                 width: 795px;
                 float: right;
-            }
-            .main{
-                background-color: mintcream;
-                width: 550px;
-                float:left;
-            }
-            .sidebar2{
-                background-color: mistyrose;
-                float:right;
-                width: 230px;
+                .wrap-nar{
+                    float:right;
+                    width: 230px;
+                    .nar-col{
+                        width: 100%;
+                        margin-top: 0;
+                        .nar-col-e{
+                            padding: 6px 0;
+                            background-color: white;
+                            border-radius: 4px;
+                            margin: 15px 0 0;
+                            a.nar-drop1{
+                                padding-left: 28px;
+                                padding-right: 5px;
+                            }
+                            a{
+                                padding-left: 18px;
+                                padding-right: 5px;
+                                text-decoration: none;
+                                display: block;
+                                height: 32px;
+                                line-height: 31px;
+                                color: #2a5885;
+                                
+                                .fas{
+                                    float:right;
+                                    margin: 9px 3px 0 12px;
+                                    color:#818c99;
+                                    opacity: 7;
+                                }
+                            }
+                            a:hover{
+                                background-color: rgba(174, 183, 194, 0.16);
+
+                            }
+                            a:focus{
+                                border-left: 2px solid #5181b8;
+                                color: black;
+                                font-weight: 500;
+                                background-color: rgba(174, 183, 194, 0.16);
+                            }
+                            .space{
+                                border-top: 1px solid #dce1e6;
+                                margin: 6px 15px;
+                            }
+                        }
+                        .feed-block{
+                            background: white;
+                            border-radius: 4px;
+                            margin: 15px 0;
+                            .ui_toggler_wrap.hot{
+                                padding-left: 19px;
+                                border-left: 15px solid transparent;
+                                background-position: left 13px;
+                                padding: 13px 15px;
+                                cursor: pointer;
+                                input{
+                                    float: right;
+                                }
+                            }
+                        }
+                    }
+                }
+                .main{
+                    background-color: #edeef0;
+                    width: 550px;
+                    height: 2000px;
+                    float:left;
+                    .main-col{
+                        width: 100%;
+                        margin-top: 0;
+                        .main-col-e{
+                            background-color: white;
+                            border-radius: 4px;
+                            margin: 15px 0 0;
+
+                            .main-drop{
+                                display:flex;
+                                line-height: 28px;
+                                color: #2a5885;
+                                align-items: center;
+                                justify-content: space-between;
+                                padding: 10px 20px 16px 12px;
+                                a{
+                                    padding-left: 10px;
+                                    .camera{
+                                        cursor: pointer;
+                                        position: relative;
+                                        border-radius: 50%;
+                                        background-color: #c8cbd1;
+                                        width: 28px;
+                                        height: 28px;
+                                        #camera{
+                                            position: absolute;
+                                            top: 6.5px;
+                                            left: 5.5px;
+                                        }
+                                    }
+                                }   
+                                .text{
+                                    width: 263px;
+                                    input{
+                                        border-style: hidden;
+                                        font-size: 13px;
+                                    }
+                                }
+                                .icon{
+                                    a{
+                                        margin-left: 8px;
+                                        color: #c8cbd1;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

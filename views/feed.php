@@ -63,6 +63,7 @@
     <main>
         <div class="page-layout">
             <div class="container">
+                <div class="nav-wrap">
                     <nav class="sidebar-wrap">
                         <ol class="sidebar">
                             <li id="1_pf">
@@ -179,10 +180,91 @@
                             <a class="left_menu_nav" href="#" >About VK</a>
                         </div>
                     </nav>
+                </div>
                 <div class="page-body">
-                    <div class="main">main
+                    <div class="main">
+                        <div class="main-col">
+                            <div class="main-col-e">
+                                <div class="main-drop">
+                                    <a>
+                                        <div class="camera">
+                                            <span class="fas fa-camera fa-lg" id="camera"></span>
+                                        </div>
+                                    </a>
+                                    <div class="text">
+                                        <input type="email" class="form-control px-0 py-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What news">
+                                    </div>
+                                    <div class="icon">
+                                    <a>
+                                        <span class="fas fa-camera fa-lg"></span>
+                                    </a>
+                                    <a>
+                                        <span class="fas fa-play-circle"></span>
+                                    </a>
+                                    <a>
+                                        <span class="fas fa-music"></span>
+                                    </a>
+                                    <a>
+                                        <span class="far fa-file-alt"></span>
+                                    </a>
+                                    |
+                                    <a>
+                                        <span class="far fa-lightbulb"></span>
+                                    </a>
+                                    <a>
+                                        <span class="fas fa-lock"></span>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="sidebar2">sidebar</div>
+                    <div class="wrap-nar">
+                        <div class="nar-col">
+                            <div class="nar-col-e">
+                                <a class="nar-drop" href="#">
+                                    <span>News</span>
+                                    <span class="fas fa-plus"></span>
+                                    <span class="fas fa-sliders-h"></span>
+                                </a>
+                                <a class="nar-drop1" href="#">
+                                    <span>Photos</span>
+                                </a>
+                                <a class="nar-drop1" href="#">
+                                    <span>Videos</span>
+                                </a>
+                                <a class="nar-drop1" href="#">
+                                    <span>Podcasts</span>
+                                </a>
+                                <a class="nar-drop1" href="#">
+                                    <span>Coronalvirus</span>
+                                </a>
+                                <a class="nar-drop" href="#">
+                                    <span>Recommended</span>
+                                </a>
+                                <a class="nar-drop" href="#">
+                                    <span>Search</span>
+                                </a>
+                                <div class="space"></div>
+                                <a class="nar-drop" href="#">
+                                    <span>Reactions</span>
+                                </a>
+                                <a class="nar-drop" href="#">
+                                    <span>Updates</span>
+                                </a>
+                                <a class="nar-drop" href="#">
+                                    <span>Comments</span>
+                                </a>
+                            </div>
+                            <div id="feed_filters">
+                                <div class="feed-block">
+                                    <div class="ui_toggler_wrap hot form-check form-switch">
+                                        <div class="ui_toggler_label">Interesting at the top<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
