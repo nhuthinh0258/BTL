@@ -1,4 +1,5 @@
 body {
+  width: 1902px;
   background: #edeef0;
   margin: 0;
   padding: 0;
@@ -36,6 +37,7 @@ header {
   padding: 0;
 }
 .topsearch {
+  outline: none;
   width: 230px;
   height: 32px;
   border: 0;
