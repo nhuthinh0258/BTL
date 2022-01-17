@@ -55,17 +55,26 @@
                                 </ul>
                             <a id="navbarDarkDropdownMenuLink3" data-bs-toggle="dropdown">
                                 <div class="camera"><span class="fas fa-camera fa-lg" id="camera"></span><span class="fas fa-chevron-down" id="down"></span></div>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink4">
-                                    <li class="dropdown-item1">
+                                <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink3">
                                         <?php
                                             if(isset($_SESSION['loginok']))
                                             {
-                                                echo "<a class='drop-link' style='text-decoration: none'>Xin chào ".$_SESSION['loginok']."</a>";
+                                                echo "<p class='drop-link'style='padding:5px;'>Hello ".$_SESSION['loginok']."</p>";
+                                                echo "<a class='dropdown-item'>";
+                                                echo "<span class='fas fa-cog'style='color:blue; margin-right:10px;'></span>";
+                                                echo "<span style='color:black'>Settings</span>";
+                                                echo "</a>";
+                                                echo "<a class='dropdown-item'>";
+                                                echo "<span class='far fa-question-circle'style='color:blue; margin-right:10px;'></span>";
+                                                echo "<span style='color:black'>Helps</span>";
+                                                echo "</a>";
+                                                echo "<a class='dropdown-item' href='../model/logout.php'>";
+                                                echo "<span class='fas fa-user-friends'style='color:blue; margin-right:10px;'></span>";
+                                                echo "<span style='color:black'>Sign out</span>";
+                                                echo "</a>";
+
                                             }
                                         ?>
-                                    </li>
-                                    <li><a class="dropdown-item1" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item1" href="#">LOG OUT</a></li>
                                 </ul>
                             </a>
                         </li>
