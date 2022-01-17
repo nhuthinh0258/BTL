@@ -425,40 +425,58 @@ main{
                             margin: 15px 0 0;
 
                             .main-drop{
-                                display:flex;
-                                line-height: 28px;
-                                color: #2a5885;
-                                align-items: center;
-                                justify-content: space-between;
                                 padding: 10px 20px 16px 12px;
-                                a{
+                                color: #2a5885;
+                                line-height: 28px;
+                                #upload{
+                                    display: none;
+                                    padding-top: 20px;
                                     padding-left: 10px;
-                                    .camera{
+                                    padding-bottom: 10px;
+                                    .up{
+                                        padding: 7px 16px 8px 16px;
+                                        border: none;
+                                        background-color: #e5ebf1;
+                                        line-height: 11px;
+                                        color: #55677d;
+                                        border-radius: 4px;
                                         cursor: pointer;
-                                        position: relative;
-                                        border-radius: 50%;
-                                        background-color: #c8cbd1;
-                                        width: 28px;
-                                        height: 28px;
-                                        #camera{
-                                            position: absolute;
-                                            top: 6.5px;
-                                            left: 5.5px;
-                                        }
-                                    }
-                                }   
-                                .text{
-                                    width: 263px;
-                                    input{
-                                        border-style: hidden;
-                                        font-size: 13px;
                                     }
                                 }
-                                .icon{
+                                .main-drop2{
+                                    display:flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
                                     a{
-                                        margin-left: 8px;
-                                        color: #c8cbd1;
-                                        cursor: pointer;
+                                        padding-left: 10px;
+                                        .camera{
+                                            cursor: pointer;
+                                            position: relative;
+                                            border-radius: 50%;
+                                            background-color: #c8cbd1;
+                                            width: 28px;
+                                            height: 28px;
+                                            #camera{
+                                                position: absolute;
+                                                top: 6.5px;
+                                                left: 5.5px;
+                                            }
+                                        }
+                                    }   
+                                    .text{
+                                        width: 263px;
+                                        input{
+                                            border-style: hidden;
+                                            font-size: 13px;
+                                        }
+                                    }
+                                    .icon{
+                                        a{
+                                            margin-left: 8px;
+                                            color: #c8cbd1;
+                                            cursor: pointer;
+                                        }
                                     }
                                 }
                             }

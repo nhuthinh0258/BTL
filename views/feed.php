@@ -208,35 +208,41 @@
                         <div class="main-col">
                             <div class="main-col-e">
                                 <div class="main-drop">
-                                    <a>
-                                        <div class="camera">
-                                            <span class="fas fa-camera fa-lg" id="camera"></span>
+                                    <div class="main-drop2">
+                                        <a>
+                                            <div class="camera">
+                                                <span class="fas fa-camera fa-lg" id="camera" onclick="myFunction()"></span>
+                                            </div>
+                                        </a>
+                                        <div class="text">
+                                            <input type="email" class="form-control px-0 py-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What news">
                                         </div>
-                                    </a>
-                                    <div class="text">
-                                        <input type="email" class="form-control px-0 py-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What news">
+                                        <div class="icon">
+                                        <a>
+                                            <span class="fas fa-camera fa-lg" ></span>
+                                        </a>
+                                        <a>
+                                            <span class="fas fa-play-circle"></span>
+                                        </a>
+                                        <a>
+                                            <span class="fas fa-music"></span>
+                                        </a>
+                                        <a>
+                                            <span class="far fa-file-alt"></span>
+                                        </a>
+                                        |
+                                        <a>
+                                            <span class="far fa-lightbulb"></span>
+                                        </a>
+                                        <a>
+                                            <span class="fas fa-lock"></span>
+                                        </a>
+                                        </div>
                                     </div>
-                                    <div class="icon">
-                                    <a>
-                                        <span class="fas fa-camera fa-lg"></span>
-                                    </a>
-                                    <a>
-                                        <span class="fas fa-play-circle"></span>
-                                    </a>
-                                    <a>
-                                        <span class="fas fa-music"></span>
-                                    </a>
-                                    <a>
-                                        <span class="far fa-file-alt"></span>
-                                    </a>
-                                    |
-                                    <a>
-                                        <span class="far fa-lightbulb"></span>
-                                    </a>
-                                    <a>
-                                        <span class="fas fa-lock"></span>
-                                    </a>
-                                    </div>
+                                    <form action="../controller/upload.php" method="post" enctype="multipart/form-data" name="upload" id="upload">
+                                        <input type="file" name="myfile">
+                                        <input type="submit" name="submitup" value="Upload"class="up">
+                                    </form>
                                 </div>
                             </div>
                             <div class="main_content1">
@@ -250,6 +256,80 @@
                                     <div class="story_item"></div>
                                 </div>
                             </div>
+
+                                    <?php
+                                    // Include the database configuration file
+                                    include '../model/dbconfig.php';
+
+                                    // Get images from the database
+                                    $result = mysqli_query($conn,"SELECT * FROM db_media ORDER BY ngay_up DESC");
+
+                                    if(mysqli_num_rows($result) > 0){
+                                        while($row = mysqli_fetch_assoc($result)){
+                                            $imageURL = '../upload/'.$row["ten_file"];
+                                    ?>
+                                        <div class="main_content2">
+                                            <div class="user">
+                                                <div class="avatar">
+                                                    <a><img src="../img/tải xuống.png" witdh="50px" height="50px"></a>
+                                                </div>
+                                                <div class="idname">
+                                                    <h5>
+                                                        <a class="name">Nguyễn Như Thịnh</a>
+                                                    </h5>
+                                                    <div class="hour">
+                                                        <a class="post_hour">one hour ago</a>
+                                                    </div>
+                                                </div>
+                                                <div class="interactive">
+                                                    <button class="follow"><span class="fas fa-plus icon1"></span>Follow</button>
+                                                    <span class="fas fa-ellipsis-h icon2"></span>
+                                                </div>
+                                            </div>
+                                            <div class="post_content">
+                                                <div class="wall_text">
+                                                    <div class="wall_text2">
+                                                        <div class="text_wall">
+                                                            Công nghệ web
+                                                        </div>
+                                                        <div class="imagewall">
+                                                            <img src="<?php echo $imageURL; ?>" class="img-fluid" />
+                                                        </div>
+                                                        <div class="post_copy">
+                                                            <a class="copy" href="#">Source: Công nghệ web</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="like_form">
+                                                    <div class="post_like">
+                                                        <div class="btn_like">
+                                                            <div class="like btn">
+                                                                <span class="far fa-heart"></span>
+                                                                <span class="1">1</span>
+                                                            </div>
+                                                            <div class="comment btn" style="margin-left:8px;">
+                                                                <span class="far fa-comment"></span>
+                                                                <span class="1">1</span>
+                                                            </div>
+                                                            <div class="share btn" style="margin-left:8px;">
+                                                                <span class="far fa-share-square"></span>
+                                                                <span class="1">1</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="view">
+                                                            <span class="far fa-eye"></span>
+                                                            <span class="1">1</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php }
+                                    }else{ ?>
+                                        <p>No image(s) found...</p>
+                                    <?php } ?>
+
+
                             <div class="main_content2">
                                 <div class="user">
                                     <div class="avatar">
@@ -306,6 +386,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="main_content2">
                                 <div class="user">
                                     <div class="avatar">
@@ -362,6 +443,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="main_content2">
                                 <div class="user">
                                     <div class="avatar">
@@ -530,4 +612,5 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../js/formshow.js"></script>
 </body>

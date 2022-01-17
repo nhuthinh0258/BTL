@@ -418,17 +418,34 @@ main .page-layout .container .page-body .main .main-col .main-col-e {
   margin: 15px 0 0;
 }
 main .page-layout .container .page-body .main .main-col .main-col-e .main-drop {
-  display: flex;
-  line-height: 28px;
+  padding: 10px 20px 16px 12px;
   color: #2a5885;
+  line-height: 28px;
+}
+main .page-layout .container .page-body .main .main-col .main-col-e .main-drop #upload {
+  display: none;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+main .page-layout .container .page-body .main .main-col .main-col-e .main-drop #upload .up {
+  padding: 7px 16px 8px 16px;
+  border: none;
+  background-color: #e5ebf1;
+  line-height: 11px;
+  color: #55677d;
+  border-radius: 4px;
+  cursor: pointer;
+}
+main .page-layout .container .page-body .main .main-col .main-col-e .main-drop .main-drop2 {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px 16px 12px;
 }
-main .page-layout .container .page-body .main .main-col .main-col-e .main-drop a {
+main .page-layout .container .page-body .main .main-col .main-col-e .main-drop .main-drop2 a {
   padding-left: 10px;
 }
-main .page-layout .container .page-body .main .main-col .main-col-e .main-drop a .camera {
+main .page-layout .container .page-body .main .main-col .main-col-e .main-drop .main-drop2 a .camera {
   cursor: pointer;
   position: relative;
   border-radius: 50%;
@@ -436,19 +453,19 @@ main .page-layout .container .page-body .main .main-col .main-col-e .main-drop a
   width: 28px;
   height: 28px;
 }
-main .page-layout .container .page-body .main .main-col .main-col-e .main-drop a .camera #camera {
+main .page-layout .container .page-body .main .main-col .main-col-e .main-drop .main-drop2 a .camera #camera {
   position: absolute;
   top: 6.5px;
   left: 5.5px;
 }
-main .page-layout .container .page-body .main .main-col .main-col-e .main-drop .text {
+main .page-layout .container .page-body .main .main-col .main-col-e .main-drop .main-drop2 .text {
   width: 263px;
 }
-main .page-layout .container .page-body .main .main-col .main-col-e .main-drop .text input {
+main .page-layout .container .page-body .main .main-col .main-col-e .main-drop .main-drop2 .text input {
   border-style: hidden;
   font-size: 13px;
 }
-main .page-layout .container .page-body .main .main-col .main-col-e .main-drop .icon a {
+main .page-layout .container .page-body .main .main-col .main-col-e .main-drop .main-drop2 .icon a {
   margin-left: 8px;
   color: #c8cbd1;
   cursor: pointer;
