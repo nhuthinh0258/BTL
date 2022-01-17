@@ -56,7 +56,7 @@
                         </div>
                         <div class="col px-0">
                             <div class="col p-4 bg-white" id=login>
-                                <form class="bg-white m-0 p-0" action="model/process-login.php" method="POST" name="login">
+                                <form class="bg-white m-0 p-0" action="model/process-login.php" method="POST" name="login" onsubmit="return validateform()">
                                     <div class="mb-3">
                                         <input type="text" class="form-control" name="txtdienthoai" id="index_email" placeholder="Phone or email">
                                     </div>
@@ -252,5 +252,6 @@
     
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/validateform.js"></script>
 </body>
 </html>

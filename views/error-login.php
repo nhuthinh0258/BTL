@@ -25,7 +25,7 @@ require("../template/header.php");
                         </div>
                     </div>
                     <div class="login_form">
-                        <form class="bg-white m-0 p-0" action="model/process-login.php" method="POST" name="login">
+                        <form class="bg-white m-0 p-0" action="../model/process-login.php" method="POST" name="login" onsubmit="return validateform()">
                             <div class="mb-3">
                                 <input type="text" class="form-control" name="txtdienthoai" id="index_email" placeholder="Phone or email">
                             </div>
@@ -52,7 +52,7 @@ require("../template/header.php");
         </div>
     </div>
 </main>
-
+<script src="../js/validateform.js"></script>
 <?php
 require("../template/footer.php");
 ?>

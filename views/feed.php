@@ -239,7 +239,52 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="main_content1">
+                                <div class="story">
+                                    Stories
+                                    <div class="sett">
+                                    Settings
+                                    </div>
+                                </div>
+                                <div class="story_feed">
+                                    <div class="story_item"></div>
+                                </div>
+                            </div>
+                            <div class="main_content2">
+                                <div class="user">
+                                    <div class="avatar">
+                                        <a><img src="../img/tải xuống.png" witdh="50px" height="50px"></a>
+                                    </div>
+                                    <div class="idname">
+                                        <h5>
+                                            <a class="name">Nguyễn Như Thịnh</a>
+                                        </h5>
+                                        <div class="hour">
+                                            <a class="post_hour">one hour ago</a>
+                                        </div>
+                                    </div>
+                                    <div class="interactive">
+                                        <button><span class="fas fa-plus icon1"></span>Follow</button>
+                                        <span class="fas fa-ellipsis-h icon2"></span>
+                                    </div>
+                                </div>
+                                <div class="post_content">
+                                    <div class="wall_text">
+                                        <div class="wall_text2">
+                                            <div class="text_wall">
+                                                Công nghệ web
+                                            </div>
+                                            <div class="imagewall">
+                                                <img src="../img/img1.jpeg" alt="">
+                                            </div>
+                                            <div class="post_copy"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
                     <div class="wrap-nar">
                         <div class="nar-col">

@@ -236,6 +236,145 @@ main{
                     .main-col{
                         width: 100%;
                         margin-top: 0;
+                        .main_content1{
+                            background-color: white;
+                            border-radius: 4px;
+                            margin: 15px 0 0;
+                            .story{
+                                padding: 17px 0 0 20px;
+                                font-weight: 400;
+                                .sett{
+                                    margin-right: 20px;
+                                    cursor: pointer;
+                                    opacity: 0;
+                                    float: right;
+                                    color: #626d7a;
+                                    transition: opacity 100ms ease-in-out;
+                                }
+                                .sett:hover{
+                                    opacity: 1;
+                                    text-decoration: underline;
+                                }
+                            }
+                            .story_feed{
+                                padding-top: 17px;
+                                padding-bottom: 14px;
+                                .story_item{
+                                    height: 500px;
+                                    background-image: url("../img/camera_200.png");
+                                    margin: 0 3px;
+                                    border-radius: 8px;
+                                    background: no-repeat cover;
+                                    background-clip: border-box;
+                                    display: inline-block;
+                                    width: 94px;
+                                    height: 167px;
+                                    overflow: hidden;
+                                    cursor: pointer;
+                                }
+                                .story_item:first-child{
+                                    margin-left: 20px;
+                                }
+                                .story_item:last-child{
+                                    margin-right: 20px;
+                                }
+                            }
+                        }
+                        .main_content2{
+                            background-color: white;
+                            border-radius: 4px;
+                            margin: 15px 0 0;
+                            .user{
+                                padding: 15px 20px 0 20px;
+                                display: flex;
+                                align-items: start;
+                                .avatar{
+                                    width: 50px;
+                                    margin-right: 15px;
+                                    img{
+                                        border-radius: 50%;
+                                        border: 1px solid black;
+                                    }
+                                }
+                                .idname{
+                                    padding-top: 8px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    flex:1 1 auto;
+                                    h5{
+                                        margin: 0;
+                                        padding-right: 20px;
+                                        font-size: 13px;
+                                        line-height: 16px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        .name{
+                                            color: #2a5885;
+                                            cursor: pointer;
+                                            text-decoration: none;
+                                            font-weight: 500;
+                                        }
+                                        .name:hover{
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                    .hour{
+                                        padding-top: 3px;
+                                        
+                                        .post_hour{
+                                            color: #818c99;  
+                                            cursor: pointer;
+                                            text-decoration: none;
+                                        }
+                                        .post_hour:hover{
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                                .interactive{
+                                    display: flex;
+                                    padding-top: 5px;
+                                    align-items: center;
+                                    button{
+                                        padding:7px 16px 8px 16px;
+                                        border:none;
+                                        background-color: #e5ebf1;
+                                        float: right;
+                                        line-height: 11px;
+                                        color:#55677d;
+                                        border-radius: 4px;
+                                        cursor: pointer;
+                                        .icon1{
+                                            margin-right: 8px;
+                                        }
+                                    }
+                                    .icon2{
+                                        width: 24px;
+                                        margin-left: 12px;
+                                        color: #aeb7c2;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                            .post_content{
+                                .wall_text{
+                                    padding: 8px 20px 0 20px;
+                                    .text_wall{
+                                        padding-top: 3px;
+                                        line-height: 1.462;
+                                        overflow: hidden;
+                                        word-wrap: break-word;
+                                    }
+                                    .imagewall{
+                                        padding: 10px 0 4px;
+                                        img{
+                                            width: auto;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                         .main-col-e{
                             background-color: white;
                             border-radius: 4px;
