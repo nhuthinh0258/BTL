@@ -8,8 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="../css/feed.css">  
+    <link rel="stylesheet" href="../css/feed.css">  
 </head>
+<?php
+    session_start();
+    if(!isset($_SESSION['loginok'])){
+        header("location:../index.php");
+    }
+?>
 <body>
     <header class="header-wrap" id="header">
         <div class="page-header">
@@ -33,7 +39,7 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink2">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="../index.php">LOG OUT</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </a>
                         </li>
@@ -42,17 +48,24 @@
                         </li>
                         <li class="buttonhead2" id="col5">
                             <a id="navbarDarkDropdownMenuLink3" data-bs-toggle="dropdown" style="padding: 17px 15px;"><span class="fas fa-bars fa-lg"></span></a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink3">
+                                <ul class="dropdown-menu" >
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
-                            <a id="navbarDarkDropdownMenuLink4" data-bs-toggle="dropdown">
+                            <a id="navbarDarkDropdownMenuLink3" data-bs-toggle="dropdown">
                                 <div class="camera"><span class="fas fa-camera fa-lg" id="camera"></span><span class="fas fa-chevron-down" id="down"></span></div>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink4">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li class="dropdown-item1">
+                                        <?php
+                                            if(isset($_SESSION['loginok']))
+                                            {
+                                                echo "<a class='drop-link' style='text-decoration: none'>Xin chào ".$_SESSION['loginok']."</a>";
+                                            }
+                                        ?>
+                                    </li>
+                                    <li><a class="dropdown-item1" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item1" href="#">LOG OUT</a></li>
                                 </ul>
                             </a>
                         </li>

@@ -56,7 +56,11 @@ header .page-header #navhead #col5 {
   display: flex;
   align-items: center;
 }
-header .page-header #navhead #col5 a {
+header .page-header #navhead #col5 a .dropdown-item1 {
+  padding: 5;
+  text-decoration: none;
+}
+header .page-header #navhead #col5 a #navbarDarkDropdownMenuLink3 {
   color: gray;
   padding: 10px 20px;
   cursor: pointer;

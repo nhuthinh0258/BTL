@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if(isset($_POST['btnsignin'])){
     $user=$_POST['txtdienthoai'];
     $pass=$_POST['txtpass'];
@@ -16,7 +18,8 @@ if(isset($_POST['btnsignin'])){
     $result = mysqli_query($conn,$sql);
 
     if(mysqli_num_rows($result) > 0){
-        header("location: ../views/home.php");
+        $_SESSION['loginok']=$user;
+        header("location: ../views/feed.php");
 
     }else{
         header("location: ../views/error-login.php"); 
