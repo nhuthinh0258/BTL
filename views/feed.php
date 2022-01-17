@@ -264,7 +264,7 @@
                                         </div>
                                     </div>
                                     <div class="interactive">
-                                        <button><span class="fas fa-plus icon1"></span>Follow</button>
+                                        <button class="follow"><span class="fas fa-plus icon1"></span>Follow</button>
                                         <span class="fas fa-ellipsis-h icon2"></span>
                                     </div>
                                 </div>
@@ -275,14 +275,206 @@
                                                 Công nghệ web
                                             </div>
                                             <div class="imagewall">
-                                                <img src="../img/img1.jpeg" alt="">
+                                                <img src="../img/img1.jpeg" class="img-fluid">
                                             </div>
-                                            <div class="post_copy"></div>
+                                            <div class="post_copy">
+                                                <a class="copy" href="#">Source: Công nghệ web</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="like_form">
+                                        <div class="post_like">
+                                            <div class="btn_like">
+                                                <div class="like btn">
+                                                    <span class="far fa-heart"></span>
+                                                    <span class="1">1</span>
+                                                </div>
+                                                <div class="comment btn" style="margin-left:8px;">
+                                                    <span class="far fa-comment"></span>
+                                                    <span class="1">1</span>
+                                                </div>
+                                                <div class="share btn" style="margin-left:8px;">
+                                                    <span class="far fa-share-square"></span>
+                                                    <span class="1">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="view">
+                                                <span class="far fa-eye"></span>
+                                                <span class="1">1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main_content2">
+                                <div class="user">
+                                    <div class="avatar">
+                                        <a><img src="../img/tải xuống.png" witdh="50px" height="50px"></a>
+                                    </div>
+                                    <div class="idname">
+                                        <h5>
+                                            <a class="name">Nguyễn Như Thịnh</a>
+                                        </h5>
+                                        <div class="hour">
+                                            <a class="post_hour">one hour ago</a>
+                                        </div>
+                                    </div>
+                                    <div class="interactive">
+                                        <button class="follow"><span class="fas fa-plus icon1"></span>Follow</button>
+                                        <span class="fas fa-ellipsis-h icon2"></span>
+                                    </div>
+                                </div>
+                                <div class="post_content">
+                                    <div class="wall_text">
+                                        <div class="wall_text2">
+                                            <div class="text_wall">
+                                                Công nghệ web
+                                            </div>
+                                            <div class="imagewall">
+                                                <img src="../img/img1.jpeg" class="img-fluid">
+                                            </div>
+                                            <div class="post_copy">
+                                                <a class="copy" href="#">Source: Công nghệ web</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="like_form">
+                                        <div class="post_like">
+                                            <div class="btn_like">
+                                                <div class="like btn">
+                                                    <span class="far fa-heart"></span>
+                                                    <span class="1">1</span>
+                                                </div>
+                                                <div class="comment btn" style="margin-left:8px;">
+                                                    <span class="far fa-comment"></span>
+                                                    <span class="1">1</span>
+                                                </div>
+                                                <div class="share btn" style="margin-left:8px;">
+                                                    <span class="far fa-share-square"></span>
+                                                    <span class="1">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="view">
+                                                <span class="far fa-eye"></span>
+                                                <span class="1">1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main_content2">
+                                <div class="user">
+                                    <div class="avatar">
+                                        <a><img src="../img/tải xuống.png" witdh="50px" height="50px"></a>
+                                    </div>
+                                    <div class="idname">
+                                        <h5>
+                                            <a class="name">Nguyễn Như Thịnh</a>
+                                        </h5>
+                                        <div class="hour">
+                                            <a class="post_hour">one hour ago</a>
+                                        </div>
+                                    </div>
+                                    <div class="interactive">
+                                        <button class="follow"><span class="fas fa-plus icon1"></span>Follow</button>
+                                        <span class="fas fa-ellipsis-h icon2"></span>
+                                    </div>
+                                </div>
+                                <div class="post_content">
+                                    <div class="wall_text">
+                                        <div class="wall_text2">
+                                            <div class="text_wall">
+                                                Công nghệ web
+                                            </div>
+                                            <div class="imagewall">
+                                                <img src="../img/img1.jpeg" class="img-fluid">
+                                            </div>
+                                            <div class="post_copy">
+                                                <a class="copy" href="#">Source: Công nghệ web</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="like_form">
+                                        <div class="post_like">
+                                            <div class="btn_like">
+                                                <div class="like btn">
+                                                    <span class="far fa-heart"></span>
+                                                    <span class="1">1</span>
+                                                </div>
+                                                <div class="comment btn" style="margin-left:8px;">
+                                                    <span class="far fa-comment"></span>
+                                                    <span class="1">1</span>
+                                                </div>
+                                                <div class="share btn" style="margin-left:8px;">
+                                                    <span class="far fa-share-square"></span>
+                                                    <span class="1">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="view">
+                                                <span class="far fa-eye"></span>
+                                                <span class="1">1</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
+                            <div class="main_content2">
+                                <div class="user">
+                                    <div class="avatar">
+                                        <a><img src="../img/tải xuống.png" witdh="50px" height="50px"></a>
+                                    </div>
+                                    <div class="idname">
+                                        <h5>
+                                            <a class="name">Nguyễn Như Thịnh</a>
+                                        </h5>
+                                        <div class="hour">
+                                            <a class="post_hour">one hour ago</a>
+                                        </div>
+                                    </div>
+                                    <div class="interactive">
+                                        <button class="follow"><span class="fas fa-plus icon1"></span>Follow</button>
+                                        <span class="fas fa-ellipsis-h icon2"></span>
+                                    </div>
+                                </div>
+                                <div class="post_content">
+                                    <div class="wall_text">
+                                        <div class="wall_text2">
+                                            <div class="text_wall">
+                                                Công nghệ web
+                                            </div>
+                                            <div class="imagewall">
+                                                <img src="../img/img1.jpeg" class="img-fluid">
+                                            </div>
+                                            <div class="post_copy">
+                                                <a class="copy" href="#">Source: Công nghệ web</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="like_form">
+                                        <div class="post_like">
+                                            <div class="btn_like">
+                                                <div class="like btn">
+                                                    <span class="far fa-heart"></span>
+                                                    <span class="1">1</span>
+                                                </div>
+                                                <div class="comment btn" style="margin-left:8px;">
+                                                    <span class="far fa-comment"></span>
+                                                    <span class="1">1</span>
+                                                </div>
+                                                <div class="share btn" style="margin-left:8px;">
+                                                    <span class="far fa-share-square"></span>
+                                                    <span class="1">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="view">
+                                                <span class="far fa-eye"></span>
+                                                <span class="1">1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
