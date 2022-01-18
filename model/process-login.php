@@ -12,14 +12,21 @@ if(isset($_POST['btnsignin'])){
         die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
     }
     // Bước 02: Thực hiện truy vấn
-    $sql = "SELECT * FROM db_userdangnhap WHERE (email = '$user' OR sodienthoai='$user') AND matkhau='$pass'";
+    $sql = "SELECT * FROM db_userdangnhap WHERE email = '$user' OR sodienthoai='$user'";
 
 
     $result = mysqli_query($conn,$sql);
 
     if(mysqli_num_rows($result) > 0){
-        $_SESSION['loginok']=$user;
-        header("location: ../views/feed.php");
+        $row= mysqli_fetch_assoc($result);
+        $pass_hash=$row['matkhau'];
+        if(password_verify($pass,$pass_hash)){
+            $_SESSION['loginok']=$user;
+            header("location: ../views/feed.php");
+        }
+        else{
+            header("location: ../views/error-login.php"); 
+        }
 
     }else{
         header("location: ../views/error-login.php"); 

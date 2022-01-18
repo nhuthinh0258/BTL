@@ -74,12 +74,12 @@
                                 <div class="dangky">
                                         <h5 class="text-center fst-normal mb-0">First time here? </h5>
                                         <p class="sub text-center">Sign up for VK</p>
-                                    <form class="bg-white m-0 p-0">
+                                    <form class="bg-white m-0 p-0" action="views/register.php" method="POST" name="signup" onsubmit="return validateregister()">
                                             <div class="mb-3">
-                                                <input type="text" class="form-control" id="firstname" placeholder="Your first name">
+                                                <input type="text" class="form-control" name="txtfirstname" id="firstname" placeholder="Your first name">
                                             </div>
                                             <div class="mb-3">
-                                                <input type="text" class="form-control" id="lastname" placeholder="Your last name">
+                                                <input type="text" class="form-control" name="txtlastname" id="lastname" placeholder="Your last name">
                                             </div>
                                             <div class="label">
                                                 <p class="a">Birthday</p>
@@ -200,7 +200,7 @@
                                                 </div>   
                                             </div>
                                             <div class="d-grid gap-3 mx-0 mt-4">
-                                                <button class="btn btn-primary" id="regis" type="button">Continue registration</button>
+                                                <button class="btn btn-primary" id="regis" type="submit">Continue registration</button>
                                                 <button class="btn btn-primary fw-bold" id="loginfb" type="button">Sign in with Facebook</button>
                                             </div>
                                     </form>
@@ -253,5 +253,6 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/validateform.js"></script>
+    <script src="js/validateregister.js"></script>
 </body>
 </html>
