@@ -15,7 +15,7 @@
         <div class="page-header">
                     <div class="row" id=navhead>
                         <div class="col-3 ps-0 pe-0" id=col1>
-                            <img src="img/VK.com-logo.svg.png" width="30" height="30">
+                            <img src="img/VK.com-logo.svg.png" widtdsh="30" height="30">
                         </div>
                         <div class="col-3 ps-0">
                             <form>
