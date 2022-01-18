@@ -74,7 +74,6 @@
                             </div>
                             <div class="col p-4 bg-white" id=registration>
                                 <div class="dangky">
-<<<<<<< HEAD
                                         <h5 class="text-center fst-normal mb-0">First time here? </h5>
                                         <p class="sub text-center">Sign up for VK</p>
                                     <form class="bg-white m-0 p-0" action="views/register.php" method="POST" name="signup" onsubmit="return validateregister()">
@@ -90,37 +89,6 @@
                                             </div>
                                             <div class="row m-0" id="birthday" style="width: 274px;">
                                                 <div class="col px-0">
-=======
-                                    <h5 class="text-center fst-normal mb-0">First time here?</h5>
-                                    <p class="sub text-center">Sign up for VK</p>
-                                    <form action="model/process-register.php" method="POST" name="registration">
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" name="firstname" id="index_firstname" placeholder="Your first name">
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" name="lastname" id="index_lastname" placeholder="Your last name">
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" name="email" id="index_email_regis" placeholder="Your email">
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" name="username" id="index_username" placeholder="Your username">
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="password" class="form-control" name="password" id="index_password_regis" placeholder="Your password">
-                                        </div>
-                                        <div class="label">
-                                            <p class="a">Birthday</p>
-                                            <svg class="a" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-                                                <g fill="none" fill-rule="evenodd">
-                                                    <rect height="15" rx="7.5" stroke="#b4bfcc" width="15" x=".5" y=".5" />
-                                                    <path d="m5.67342187 6.34423828h1.11181641c.04833984-.6875.52636719-1.12255859 1.26757813-1.12255859.73583984 0 1.21386718.4296875 1.21386718 1.02050781 0 .54248047-.23095703.84863281-.88085937 1.24072266-.73583985.44042968-1.06347656.92382812-1.0366211 1.69726562l.0053711.40820313h1.1118164v-.32226563c0-.54248047.19873047-.82714844.89160157-1.23535156.70898441-.42431641 1.12792971-1.00976563 1.12792971-1.83691406 0-1.16552735-.95605471-2.00878907-2.37402346-2.00878907-1.55761719 0-2.39013672.92382813-2.43847657 2.15917969zm2.30419922 5.77929692c.49414063 0 .82714844-.3276368.82714844-.8164063 0-.4995117-.33300781-.8271484-.82714844-.8271484-.49414062 0-.83251953.3276367-.83251953.8271484 0 .4887695.33837891.8164063.83251953.8164063z" fill="#828a99" />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="row m-0" id="birthday" style="width: 274px;">
-                                            <div class="col px-0">
->>>>>>> 46a0ad8 (Add SQL Login/Register + Database screenshots)
                                                 <select class="form-select">
                                                     <option selected>Day</option>
                                                     <option value="1">1</option>
@@ -236,15 +204,7 @@
                                                             Other
                                                         </label>
                                                     </div>
-<<<<<<< HEAD
-                                                </div>   
-                                            </div>
-                                            <div class="d-grid gap-3 mx-0 mt-4">
-                                                <button class="btn btn-primary" id="regis" type="submit">Continue registration</button>
-                                                <button class="btn btn-primary fw-bold" id="loginfb" type="button">Sign in with Facebook</button>
-=======
                                                 </div>
->>>>>>> 46a0ad8 (Add SQL Login/Register + Database screenshots)
                                             </div>
                                         </div>
                                         <div class="d-grid gap-3 mx-0 mt-4">
@@ -301,11 +261,8 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<<<<<<< HEAD
     <script src="js/validateform.js"></script>
     <script src="js/validateregister.js"></script>
-=======
->>>>>>> 46a0ad8 (Add SQL Login/Register + Database screenshots)
 </body>
 
 </html>
