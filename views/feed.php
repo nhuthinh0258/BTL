@@ -293,7 +293,7 @@
                                                             Công nghệ web
                                                         </div>
                                                         <div class="imagewall">
-                                                            <img src="<?php echo $imageURL; ?>" class="img-fluid" />
+                                                            <img src="<?php echo $imageURL; ?>" class="img-fluid" style="max-height:600px; width:100%;"/>
                                                         </div>
                                                         <div class="post_copy">
                                                             <a class="copy" href="#">Source: Công nghệ web</a>
@@ -326,7 +326,7 @@
                                         </div>
                                     <?php }
                                     }else{ ?>
-                                        <p>No image(s) found...</p>
+                                        
                                     <?php } ?>
 
 
