@@ -87,19 +87,6 @@ CREATE TABLE `media` (
   `created_date` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Đang đổ dữ liệu cho bảng `media`
---
-
-INSERT INTO `media` (`_id`, `user_id`, `group_id`, `post_id`, `url`, `caption`, `media_type`, `created_date`) VALUES
-(1, 10, NULL, NULL, 'Base.png', '', 'photo', '2022-01-18'),
-(2, 10, NULL, NULL, '2.jpg', '', 'photo', '2022-01-18'),
-(3, 10, NULL, NULL, 'catagory.png', '', 'photo', '2022-01-18'),
-(4, 10, NULL, NULL, '4.jpg', '', 'photo', '2022-01-18'),
-(5, 10, NULL, NULL, 'Lina Happy clients.png', '', 'photo', '2022-01-18'),
-(6, 10, NULL, NULL, '1.Hệ phương trình tuyến tính.pdf', '', 'photo', '2022-01-18'),
-(8, 10, NULL, NULL, 'Body Champ Cardio $342.00 .png', '', 'photo', '2022-01-18');
-
 -- --------------------------------------------------------
 
 --
@@ -288,6 +275,19 @@ ALTER TABLE `post`
   ADD CONSTRAINT `post_ibfk_1` FOREIGN KEY (`owner_id`) REFERENCES `user` (`_id`),
   ADD CONSTRAINT `post_ibfk_2` FOREIGN KEY (`group_id`) REFERENCES `group` (`_id`);
 COMMIT;
+
+--
+-- Đang đổ dữ liệu cho bảng `media`
+--
+
+INSERT INTO `media` (`_id`, `user_id`, `group_id`, `post_id`, `url`, `caption`, `media_type`, `created_date`) VALUES
+(1, 10, NULL, NULL, 'Base.png', '', 'photo', '2022-01-18'),
+(2, 10, NULL, NULL, '2.jpg', '', 'photo', '2022-01-18'),
+(3, 10, NULL, NULL, 'catagory.png', '', 'photo', '2022-01-18'),
+(4, 10, NULL, NULL, '4.jpg', '', 'photo', '2022-01-18'),
+(5, 10, NULL, NULL, 'Lina Happy clients.png', '', 'photo', '2022-01-18'),
+(6, 10, NULL, NULL, '1.Hệ phương trình tuyến tính.pdf', '', 'photo', '2022-01-18'),
+(8, 10, NULL, NULL, 'Body Champ Cardio $342.00 .png', '', 'photo', '2022-01-18');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
