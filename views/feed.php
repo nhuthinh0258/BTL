@@ -215,7 +215,7 @@
                                             </div>
                                         </a>
                                         <div class="text">
-                                            <input type="email" class="form-control px-0 py-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What news">
+                                            <input type="text" class="form-control px-0 py-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What news">
                                         </div>
                                         <div class="icon">
                                         <a>

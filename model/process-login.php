@@ -7,15 +7,14 @@ if(isset($_POST['btnsignin'])){
     
 
 // Bước 01: Kết nối Database Server
-    $conn = mysqli_connect('localhost','root','','vk.com');
-    if(!$conn){
-        die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
-    }
+    include "../model/dbconfig.php";
     // Bước 02: Thực hiện truy vấn
     $sql = "SELECT * FROM db_userdangnhap WHERE email = '$user' OR sodienthoai='$user'";
+    $sql2="SELECT trangthai FROM db_userdangnhap WHERE email = '$user' OR sodienthoai='$user'";
 
 
     $result = mysqli_query($conn,$sql);
+    $result2= mysqli_query($conn,$sql2);
 
     if(mysqli_num_rows($result) > 0){
         $row= mysqli_fetch_assoc($result);
