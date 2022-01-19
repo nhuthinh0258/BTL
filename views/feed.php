@@ -59,17 +59,17 @@
                                         <?php
                                             if(isset($_SESSION['loginok']))
                                             {
-                                                echo "<p class='drop-link'style='padding:5px;'>Hello ".$_SESSION['loginok']."</p>";
+                                                echo "<p class='drop-link'style='padding:5px;color:black;'>Hello ".$_SESSION['loginok']."</p>";
                                                 echo "<a class='dropdown-item'>";
-                                                echo "<span class='fas fa-cog'style='color:blue; margin-right:10px;'></span>";
+                                                echo "<span class='fas fa-cog'style='color:#2a5885; margin-right:10px;'></span>";
                                                 echo "<span style='color:black'>Settings</span>";
                                                 echo "</a>";
                                                 echo "<a class='dropdown-item'>";
-                                                echo "<span class='far fa-question-circle'style='color:blue; margin-right:10px;'></span>";
+                                                echo "<span class='far fa-question-circle'style='color:#2a5885; margin-right:10px;'></span>";
                                                 echo "<span style='color:black'>Helps</span>";
                                                 echo "</a>";
                                                 echo "<a class='dropdown-item' href='../model/logout.php'>";
-                                                echo "<span class='fas fa-user-friends'style='color:blue; margin-right:10px;'></span>";
+                                                echo "<span class='fas fa-user-friends'style='color:#2a5885; margin-right:10px;'></span>";
                                                 echo "<span style='color:black'>Sign out</span>";
                                                 echo "</a>";
 
