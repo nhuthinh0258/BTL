@@ -262,11 +262,11 @@
                                     include '../model/dbconfig.php';
 
                                     // Get images from the database
-                                    $result = mysqli_query($conn,"SELECT * FROM db_media ORDER BY ngay_up DESC");
+                                    $result = mysqli_query($conn,"SELECT * FROM `media` ORDER BY `created_date` DESC");
 
                                     if(mysqli_num_rows($result) > 0){
                                         while($row = mysqli_fetch_assoc($result)){
-                                            $imageURL = '../upload/'.$row["ten_file"];
+                                            $imageURL = '../upload/'.$row["url"];
                                     ?>
                                         <div class="main_content2">
                                             <div class="user">

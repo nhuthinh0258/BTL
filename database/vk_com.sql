@@ -2,17 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
-<<<<<<< HEAD
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 18, 2022 lúc 12:52 PM
+-- Thời gian đã tạo: Th1 19, 2022 lúc 05:57 AM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 8.0.12
-=======
--- Host: localhost
--- Generation Time: Jan 18, 2022 at 06:22 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 8.1.1
->>>>>>> b950431 (--amend)
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -25,42 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
-<<<<<<< HEAD
 -- Cơ sở dữ liệu: `vk.com`
-=======
--- Database: `vk.com`
->>>>>>> b950431 (--amend)
 --
 
 -- --------------------------------------------------------
 
 --
-<<<<<<< HEAD
--- Cấu trúc bảng cho bảng `db_media`
---
-
-CREATE TABLE `db_media` (
-  `id` int(11) UNSIGNED NOT NULL,
-  `ten_file` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `ngay_up` datetime NOT NULL,
-  `trangthai` enum('1','0') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '1',
-  `chusohuu` int(10) UNSIGNED DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Đang đổ dữ liệu cho bảng `db_media`
---
-
-INSERT INTO `db_media` (`id`, `ten_file`, `ngay_up`, `trangthai`, `chusohuu`) VALUES
-(1, 'Base.png', '2022-01-18 03:58:52', '1', 1),
-(2, '2.jpg', '2022-01-18 04:03:13', '1', 1),
-(3, 'catagory.png', '2022-01-18 04:25:17', '1', 1),
-(4, '4.jpg', '2022-01-18 04:26:45', '1', 1),
-(5, 'Lina Happy clients.png', '2022-01-18 04:31:04', '1', 1),
-(6, '1.Hệ phương trình tuyến tính.pdf', '2022-01-18 05:48:41', '1', 1),
-(8, 'Body Champ Cardio $342.00 .png', '2022-01-18 14:26:45', '1', NULL);
-=======
--- Table structure for table `comment`
+-- Cấu trúc bảng cho bảng `comment`
 --
 
 CREATE TABLE `comment` (
@@ -76,7 +40,7 @@ CREATE TABLE `comment` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `friendship`
+-- Cấu trúc bảng cho bảng `friendship`
 --
 
 CREATE TABLE `friendship` (
@@ -88,7 +52,7 @@ CREATE TABLE `friendship` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `group`
+-- Cấu trúc bảng cho bảng `group`
 --
 
 CREATE TABLE `group` (
@@ -99,50 +63,47 @@ CREATE TABLE `group` (
   `last_updated` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Đang đổ dữ liệu cho bảng `group`
+--
+
+INSERT INTO `group` (`_id`, `name`, `description`, `created_date`, `last_updated`) VALUES
+(1, 'Chơi đồ Kamen Rider\r\n', 'Group cho kamen raider', '2022-01-19', '2022-01-19');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `media`
+-- Cấu trúc bảng cho bảng `media`
 --
 
 CREATE TABLE `media` (
   `_id` int(10) UNSIGNED NOT NULL,
-  `source_id` int(10) UNSIGNED NOT NULL,
-  `source_type` enum('user','group','post') NOT NULL DEFAULT 'user',
+  `user_id` int(10) UNSIGNED DEFAULT NULL,
+  `group_id` int(10) UNSIGNED DEFAULT NULL,
+  `post_id` int(10) UNSIGNED DEFAULT NULL,
   `url` text NOT NULL,
   `caption` varchar(80) NOT NULL,
   `media_type` enum('video','audio','document','photo') NOT NULL DEFAULT 'photo',
   `created_date` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
->>>>>>> b950431 (--amend)
+
+--
+-- Đang đổ dữ liệu cho bảng `media`
+--
+
+INSERT INTO `media` (`_id`, `user_id`, `group_id`, `post_id`, `url`, `caption`, `media_type`, `created_date`) VALUES
+(1, 10, NULL, NULL, 'Base.png', '', 'photo', '2022-01-18'),
+(2, 10, NULL, NULL, '2.jpg', '', 'photo', '2022-01-18'),
+(3, 10, NULL, NULL, 'catagory.png', '', 'photo', '2022-01-18'),
+(4, 10, NULL, NULL, '4.jpg', '', 'photo', '2022-01-18'),
+(5, 10, NULL, NULL, 'Lina Happy clients.png', '', 'photo', '2022-01-18'),
+(6, 10, NULL, NULL, '1.Hệ phương trình tuyến tính.pdf', '', 'photo', '2022-01-18'),
+(8, 10, NULL, NULL, 'Body Champ Cardio $342.00 .png', '', 'photo', '2022-01-18');
 
 -- --------------------------------------------------------
 
 --
-<<<<<<< HEAD
--- Cấu trúc bảng cho bảng `db_userdangnhap`
---
-
-CREATE TABLE `db_userdangnhap` (
-  `mauser` int(10) UNSIGNED NOT NULL,
-  `email` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `sodienthoai` varchar(11) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `matkhau` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email_check` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `trangthai` int(11) NOT NULL DEFAULT 0 COMMENT 'DEFAULT ''0''',
-  `email_check_date` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Đang đổ dữ liệu cho bảng `db_userdangnhap`
---
-
-INSERT INTO `db_userdangnhap` (`mauser`, `email`, `sodienthoai`, `matkhau`, `email_check`, `trangthai`, `email_check_date`) VALUES
-(1, 'nhuthinh0258@gmail.com', '01234567899', '1524658a', '', 0, NULL),
-(3, 'zzbalitaba@gmail.com', '123456786', '$2y$10$BaqEabRgcb3774IawrqvcekEv/TemxyUz2qmVUnBSGmMbfMsDXvMK', '782b7c8ac72ee5d9b3e64eeb2220113d4780', 0, NULL),
-(6, 'thinhnn72@wru.vn', '123456789', '$2y$10$oi2uHrnH61yY759q/AIlduHMmvjq5FeUDs/ZZ1fZHqxKhoHPk4KFW', '22e5d84063ba838ac90720bc3d44d93c3968', 1, '2022-01-18 05:21:25');
-=======
--- Table structure for table `membership`
+-- Cấu trúc bảng cho bảng `membership`
 --
 
 CREATE TABLE `membership` (
@@ -154,7 +115,7 @@ CREATE TABLE `membership` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `post`
+-- Cấu trúc bảng cho bảng `post`
 --
 
 CREATE TABLE `post` (
@@ -167,95 +128,11 @@ CREATE TABLE `post` (
   `created_date` date NOT NULL DEFAULT current_timestamp(),
   `last_updated` int(11) NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
->>>>>>> b950431 (--amend)
 
 -- --------------------------------------------------------
 
 --
-<<<<<<< HEAD
--- Cấu trúc bảng cho bảng `db_userlog`
---
-
-CREATE TABLE `db_userlog` (
-  `id` int(11) NOT NULL,
-  `mauser` int(10) UNSIGNED NOT NULL,
-  `ho_dem` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `ten` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `ngaysinh` date DEFAULT NULL,
-  `gioitinh` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Đang đổ dữ liệu cho bảng `db_userlog`
---
-
-INSERT INTO `db_userlog` (`id`, `mauser`, `ho_dem`, `ten`, `ngaysinh`, `gioitinh`) VALUES
-(1, 6, 'Nguyễn Như', 'Thịnh', '1999-12-04', 'Nam');
-
---
--- Chỉ mục cho các bảng đã đổ
---
-
---
--- Chỉ mục cho bảng `db_media`
---
-ALTER TABLE `db_media`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `chusohuu` (`chusohuu`);
-
---
--- Chỉ mục cho bảng `db_userdangnhap`
---
-ALTER TABLE `db_userdangnhap`
-  ADD PRIMARY KEY (`mauser`),
-  ADD UNIQUE KEY `email` (`email`);
-
---
--- Chỉ mục cho bảng `db_userlog`
---
-ALTER TABLE `db_userlog`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `mauser` (`mauser`);
-
---
--- AUTO_INCREMENT cho các bảng đã đổ
---
-
---
--- AUTO_INCREMENT cho bảng `db_media`
---
-ALTER TABLE `db_media`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
---
--- AUTO_INCREMENT cho bảng `db_userdangnhap`
---
-ALTER TABLE `db_userdangnhap`
-  MODIFY `mauser` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT cho bảng `db_userlog`
---
-ALTER TABLE `db_userlog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- Các ràng buộc cho các bảng đã đổ
---
-
---
--- Các ràng buộc cho bảng `db_media`
---
-ALTER TABLE `db_media`
-  ADD CONSTRAINT `db_media_ibfk_1` FOREIGN KEY (`chusohuu`) REFERENCES `db_userdangnhap` (`mauser`);
-
---
--- Các ràng buộc cho bảng `db_userlog`
---
-ALTER TABLE `db_userlog`
-  ADD CONSTRAINT `db_userlog_ibfk_1` FOREIGN KEY (`mauser`) REFERENCES `db_userdangnhap` (`mauser`);
-=======
--- Table structure for table `user`
+-- Cấu trúc bảng cho bảng `user`
 --
 
 CREATE TABLE `user` (
@@ -266,6 +143,7 @@ CREATE TABLE `user` (
   `birthday` date NOT NULL DEFAULT current_timestamp(),
   `phone` varchar(12) DEFAULT NULL,
   `email` varchar(100) NOT NULL,
+  `email_check` text NOT NULL,
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
   `created_date` date NOT NULL DEFAULT current_timestamp(),
@@ -274,19 +152,19 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user`
+-- Đang đổ dữ liệu cho bảng `user`
 --
 
-INSERT INTO `user` (`_id`, `first_name`, `last_name`, `gender`, `birthday`, `phone`, `email`, `username`, `password`, `created_date`, `last_updated`, `role`) VALUES
-(2, 'Thịnh', 'Nguyễn Như', 'male', '1999-12-04', '0981149985', 'nhuthinh@gmail.com', 'nhuthinh', 'Nhutren@@123', '2022-01-18', '2022-01-18', 'admin'),
-(10, 'Hiếu', 'Nguyễn Minh', 'male', '2022-01-18', NULL, 'zzbalitaba@gmail.com', 'zzbalitaba', 'Nhutren@@123', '2022-01-18', '2022-01-18', 'user');
+INSERT INTO `user` (`_id`, `first_name`, `last_name`, `gender`, `birthday`, `phone`, `email`, `email_check`, `username`, `password`, `created_date`, `last_updated`, `role`) VALUES
+(2, 'Thịnh', 'Nguyễn Như', 'male', '1999-12-04', '0981149985', 'nhuthinh@gmail.com', '', 'nhuthinh', 'Nhutren@@123', '2022-01-18', '2022-01-18', 'admin'),
+(10, 'Hiếu', 'Nguyễn Minh', 'male', '2022-01-18', NULL, 'zzbalitaba@gmail.com', '', 'zzbalitaba', 'Nhutren@@123', '2022-01-18', '2022-01-18', 'user');
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `comment`
+-- Chỉ mục cho bảng `comment`
 --
 ALTER TABLE `comment`
   ADD PRIMARY KEY (`_id`),
@@ -294,34 +172,36 @@ ALTER TABLE `comment`
   ADD KEY `post_id` (`post_id`);
 
 --
--- Indexes for table `friendship`
+-- Chỉ mục cho bảng `friendship`
 --
 ALTER TABLE `friendship`
   ADD PRIMARY KEY (`user_id`,`friend_id`),
   ADD KEY `FK_FRIENDS_2` (`friend_id`);
 
 --
--- Indexes for table `group`
+-- Chỉ mục cho bảng `group`
 --
 ALTER TABLE `group`
   ADD PRIMARY KEY (`_id`);
 
 --
--- Indexes for table `media`
+-- Chỉ mục cho bảng `media`
 --
 ALTER TABLE `media`
   ADD PRIMARY KEY (`_id`),
-  ADD KEY `source_id` (`source_id`);
+  ADD KEY `source_id` (`user_id`),
+  ADD KEY `group_id` (`group_id`),
+  ADD KEY `post_id` (`post_id`);
 
 --
--- Indexes for table `membership`
+-- Chỉ mục cho bảng `membership`
 --
 ALTER TABLE `membership`
   ADD PRIMARY KEY (`group_id`,`user_id`),
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indexes for table `post`
+-- Chỉ mục cho bảng `post`
 --
 ALTER TABLE `post`
   ADD PRIMARY KEY (`_id`),
@@ -329,85 +209,84 @@ ALTER TABLE `post`
   ADD KEY `group_id` (`group_id`);
 
 --
--- Indexes for table `user`
+-- Chỉ mục cho bảng `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `comment`
+-- AUTO_INCREMENT cho bảng `comment`
 --
 ALTER TABLE `comment`
   MODIFY `_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `group`
+-- AUTO_INCREMENT cho bảng `group`
 --
 ALTER TABLE `group`
-  MODIFY `_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `media`
+-- AUTO_INCREMENT cho bảng `media`
 --
 ALTER TABLE `media`
-  MODIFY `_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `post`
+-- AUTO_INCREMENT cho bảng `post`
 --
 ALTER TABLE `post`
   MODIFY `_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT cho bảng `user`
 --
 ALTER TABLE `user`
   MODIFY `_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- Constraints for dumped tables
+-- Các ràng buộc cho các bảng đã đổ
 --
 
 --
--- Constraints for table `comment`
+-- Các ràng buộc cho bảng `comment`
 --
 ALTER TABLE `comment`
   ADD CONSTRAINT `comment_ibfk_1` FOREIGN KEY (`owner_id`) REFERENCES `user` (`_id`),
   ADD CONSTRAINT `comment_ibfk_2` FOREIGN KEY (`post_id`) REFERENCES `post` (`_id`);
 
 --
--- Constraints for table `friendship`
+-- Các ràng buộc cho bảng `friendship`
 --
 ALTER TABLE `friendship`
   ADD CONSTRAINT `FK_FRIENDS_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`_id`),
   ADD CONSTRAINT `FK_FRIENDS_2` FOREIGN KEY (`friend_id`) REFERENCES `user` (`_id`);
 
 --
--- Constraints for table `media`
+-- Các ràng buộc cho bảng `media`
 --
 ALTER TABLE `media`
-  ADD CONSTRAINT `media_ibfk_1` FOREIGN KEY (`source_id`) REFERENCES `user` (`_id`),
-  ADD CONSTRAINT `media_ibfk_2` FOREIGN KEY (`source_id`) REFERENCES `group` (`_id`),
-  ADD CONSTRAINT `media_ibfk_3` FOREIGN KEY (`source_id`) REFERENCES `post` (`_id`);
+  ADD CONSTRAINT `media_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`_id`),
+  ADD CONSTRAINT `media_ibfk_2` FOREIGN KEY (`group_id`) REFERENCES `group` (`_id`),
+  ADD CONSTRAINT `media_ibfk_3` FOREIGN KEY (`post_id`) REFERENCES `post` (`_id`);
 
 --
--- Constraints for table `membership`
+-- Các ràng buộc cho bảng `membership`
 --
 ALTER TABLE `membership`
   ADD CONSTRAINT `membership_ibfk_1` FOREIGN KEY (`group_id`) REFERENCES `group` (`_id`),
   ADD CONSTRAINT `membership_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`_id`);
 
 --
--- Constraints for table `post`
+-- Các ràng buộc cho bảng `post`
 --
 ALTER TABLE `post`
   ADD CONSTRAINT `post_ibfk_1` FOREIGN KEY (`owner_id`) REFERENCES `user` (`_id`),
   ADD CONSTRAINT `post_ibfk_2` FOREIGN KEY (`group_id`) REFERENCES `group` (`_id`);
->>>>>>> b950431 (--amend)
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
